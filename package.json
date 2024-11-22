@@ -1,0 +1,40 @@
+{
+  "name": "sample-strapi-app-v-5",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A Strapi application",
+  "scripts": {
+    "build": "strapi build",
+    "deploy": "strapi deploy",
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "strapi": "strapi",
+    "prettier:code": "prettier \"**/*.{js,jsx}\"",
+    "prettier:other": "prettier \"**/*.{md,css,scss,yaml,yml,xml,json,html}\"",
+    "format:code": "npm run prettier:code -- --write",
+    "format:other": "npm run prettier:other -- --write",
+    "format": "npm-run-all -p format:*"
+  },
+  "dependencies": {
+    "@strapi/plugin-cloud": "5.4.1",
+    "@strapi/plugin-users-permissions": "5.4.1",
+    "@strapi/strapi": "5.4.1",
+    "pg": "8.8.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0",
+    "styled-components": "^6.0.0"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.3.3",
+    "prettier-plugin-sort-imports": "^1.8.6",
+    "typescript": "^5.6.3"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "strapi": {
+    "uuid": "b5f161bc-cdcb-4f12-99c5-e9e03fd47c06"
+  }
+}
